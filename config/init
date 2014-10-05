@@ -1,0 +1,6 @@
+#!/bin/sh
+
+chmod 755 /var/lib/solr
+chown -R tomcat6:tomcat6 /var/lib/solr
+
+exec /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
