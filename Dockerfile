@@ -1,6 +1,6 @@
-# solr and supervisord on trusty
+# Solr and supervisord on Ubuntu Trusty
 #
-FROM markusma/supervisord:trusty
+FROM markusma/supervisord:ubuntu-trusty
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends solr-tomcat \
